@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#animation-border {
+	border: 1px solid red;
+	background: #FFFAFA;
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.sky {
+	position: absolute;
+	animation: sky 5s infinite linear;
+	height: 600px;
+	width: 900px;
+}
+
+.airplane {
+	position: absolute;
+	height: 400px;
+	width: 200px;
+	animation: airplane 5s infinite linear;
+}
+
+@keyframes airplane {
+	from{
+		left: -200px;
+	}
+
+	to {
+		left: 100%;
+	}
+
+}
+
+@keyframes sky {
+	from{
+		right: -900px;
+	}
+
+	to {
+		right: 100%;
+	}
+
+}
+
